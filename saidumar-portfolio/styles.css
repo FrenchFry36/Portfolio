@@ -6,6 +6,7 @@
 
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #c3073f;
 }
 
 /* HEADER */
@@ -18,9 +19,8 @@ body {
   justify-content: right;
   padding: 0 30px;
   box-shadow: 0 2px 2px #4e4e50;
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute;
+
   width: 100%;
 }
 
@@ -98,6 +98,61 @@ h1 {
     font-size: 2.5rem;
   }
   #welcome-section p {
+    font-size: 1.3rem;
+  }
+}
+
+/* ABOUT SECTION */
+
+#about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 6rem;
+  background-color: white;
+}
+
+#about-section div {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 100%;
+  border: #c3073f solid 4px;
+  margin-bottom: 20px;
+}
+
+#about-section img {
+  width: 100%;
+}
+
+#about-section span {
+  color: #c3073f;
+  font-weight: 700;
+  font-size: 4rem;
+  text-align: center;
+}
+
+#about-section p {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.5em;
+  margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+  #about-section div {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border: #c3073f solid 3px;
+    margin-bottom: 20px;
+  }
+
+  #about-section span {
+    font-size: 2.5rem;
+  }
+  #about-section p {
     font-size: 1.3rem;
   }
 }
